@@ -6,7 +6,7 @@
     <title>Matan Ben Yosef</title>
     <meta
       name="description"
-      content="Generative AI researcher working on frontier video generation at LTX (Lightricks)."
+      content="Generative-AI researcher and engineer working on video generation at LTX (Lightricks)."
     />
     <meta name="author" content="Matan Ben Yosef" />
     <link rel="canonical" href="https://matanb.me/" />
@@ -14,7 +14,7 @@
     <meta property="og:title" content="Matan Ben Yosef" />
     <meta
       property="og:description"
-      content="Generative AI researcher working on frontier video generation at LTX (Lightricks)."
+      content="Generative-AI researcher and engineer working on video generation at LTX (Lightricks)."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://matanb.me/" />
@@ -35,8 +35,8 @@
         <p class="eyebrow">London, UK</p>
         <h1 class="name">Matan Ben Yosef</h1>
         <p class="tagline">
-          Generative AI researcher working on frontier video generation at LTX
-          (Lightricks).
+          Generative-AI researcher and engineer working on video generation at
+          LTX (Lightricks).
         </p>
         <nav class="links" aria-label="Primary links">
           <a href="https://github.com/matanby" rel="noopener noreferrer"
@@ -60,21 +60,31 @@
         <h2 id="about-heading">About</h2>
         <div class="prose">
           <p>
-            I'm a generative-AI researcher at LTX, Lightricks' video model team,
-            where I work on the post-training layer for LTX-2 — the part that
-            turns a base video model into something directable and controllable
-            (SFT, RL, distillation, controllability fine-tuning, and
-            evaluation). Most of my career has followed one thread: generative
-            models for faces and video, from GANs to diffusion.
+            I'm a generative-AI researcher and engineer at LTX, Lightricks'
+            video model team. I work on post-training for LTX-2 — mostly
+            controllability: IC-LoRAs, ControlNet-style adapters, LoRA training
+            for things like video detailing and spatiotemporal super-resolution,
+            and performance optimization of the training stack. I designed and
+            built the LTX Trainer from scratch — the training system we and the
+            community use to fine-tune LTX models. Earlier at Lightricks I
+            worked across the stack — LoRA training infrastructure for SD and
+            Flux at large scale, and the backend of a text-to-image system
+            serving millions of users.
           </p>
           <p>
-            Before LTX I led deep-learning and computer-vision research at D-ID,
-            where I built the face-animation models behind their Live Portraits
-            and AI Avatars products, and earlier I worked on adversarial face
-            de-identification and privacy-preserving vision. I also built and
-            sold FaceFX, a GAN-based face-effects app, which is how I ended up
-            at Lightricks. Outside work I run a home lab and tend to
-            over-engineer my own infrastructure.
+            I've been building software for a long time, across quite a few
+            domains. Before LTX I worked on deep-learning and computer-vision
+            research at D-ID, where I built the face-animation models behind
+            Live Portraits and AI Avatars, and worked on adversarial face
+            de-identification and privacy-preserving vision. I also built
+            FaceFX, a GAN-based face-effects app acquired by Lightricks at the
+            end of 2022 — which is how I ended up here. Earlier I spent years as
+            a software engineer well outside of AI.
+          </p>
+          <p>
+            I care about simple, well-designed software, and I'll spend real
+            time getting the systems I build right. I've been writing code since
+            I was ten, and outside work I run a home lab I enjoy over-engineering.
           </p>
         </div>
       </section>
@@ -90,9 +100,8 @@
           <div class="selected-copy">
             <h3>FaceFX</h3>
             <p>
-              A mobile app for GAN-based face portrait effects — model,
-              pipeline, and app built solo from scratch. Acquired by Lightricks
-              at the end of 2022.
+              A GAN-based face-effects app I built and shipped. Acquired by
+              Lightricks at the end of 2022.
             </p>
           </div>
           <div
@@ -113,9 +122,9 @@
             >
           </h3>
           <p>
-            Training toolkit for Lightricks' LTX-2 audio–video model — LoRA
+            The training system for Lightricks' LTX-2 video models: LoRA
             fine-tuning and multi-modal conditioning, used internally and by the
-            community. Built at LTX.
+            community. I designed and built it from scratch.
           </p>
         </article>
       </section>
@@ -170,103 +179,227 @@
         <h2 id="pubs-heading">Publications</h2>
         <ol class="biblio">
           <li>
-            <span class="pub-title"
-              >AVControl: Efficient Framework for Training Audio-Visual
-              Controls</span
+            <a
+              class="pub-thumb"
+              href="https://matanby.github.io/AVControl/"
+              rel="noopener noreferrer"
+              tabindex="-1"
+              aria-hidden="true"
             >
-            <span class="pub-authors"
-              ><strong>Matan Ben-Yosef</strong>*, Tavi Halperin*, Naomi Ken
-              Korem, Mohammad Salama, Harel Cain, Asaf Joseph, Anthony Chen,
-              Urska Jelercic, Ofir Bibi</span
-            >
-            <span class="pub-meta"
-              >arXiv preprint, 2026 · *equal contribution</span
-            >
-            <span class="pub-links">
-              <a href="https://arxiv.org/abs/2603.24793" rel="noopener noreferrer"
-                >arXiv</a
+              <video
+                src="assets/pubs/avcontrol.mp4"
+                width="190"
+                height="190"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+            </a>
+            <div class="pub-body">
+              <span class="pub-title"
+                >AVControl: Efficient Framework for Training Audio-Visual
+                Controls</span
               >
-              <a
-                href="https://matanby.github.io/AVControl/"
-                rel="noopener noreferrer"
-                >project</a
+              <span class="pub-authors"
+                ><strong>Matan Ben-Yosef</strong>*, Tavi Halperin*, Naomi Ken
+                Korem, Mohammad Salama, Harel Cain, Asaf Joseph, Anthony Chen,
+                Urska Jelercic, Ofir Bibi</span
               >
-            </span>
+              <span class="pub-meta"
+                >arXiv preprint, 2026 · *equal contribution</span
+              >
+              <span class="pub-links">
+                <a
+                  href="https://arxiv.org/abs/2603.24793"
+                  rel="noopener noreferrer"
+                  >arXiv</a
+                >
+                <a
+                  href="https://matanby.github.io/AVControl/"
+                  rel="noopener noreferrer"
+                  >project</a
+                >
+              </span>
+            </div>
           </li>
           <li>
-            <span class="pub-title"
-              >JUST-DUB-IT: Video Dubbing via Joint Audio-Visual Diffusion</span
+            <a
+              class="pub-thumb"
+              href="https://justdubit.github.io/"
+              rel="noopener noreferrer"
+              tabindex="-1"
+              aria-hidden="true"
             >
-            <span class="pub-authors"
-              >Anthony Chen, Naomi Ken Korem, Gal Zeevi, Tavi Halperin,
-              <strong>Matan Ben Yosef</strong>, Urska Jelercic, Ofir Bibi, Or
-              Patashnik, Daniel Cohen-Or</span
-            >
-            <span class="pub-meta">arXiv preprint, 2026</span>
-            <span class="pub-links">
-              <a href="https://arxiv.org/abs/2601.22143" rel="noopener noreferrer"
-                >arXiv</a
+              <video
+                src="assets/pubs/justdubit.mp4"
+                width="190"
+                height="134"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+            </a>
+            <div class="pub-body">
+              <span class="pub-title"
+                >JUST-DUB-IT: Video Dubbing via Joint Audio-Visual Diffusion</span
               >
-              <a href="https://justdubit.github.io/" rel="noopener noreferrer"
-                >project</a
+              <span class="pub-authors"
+                >Anthony Chen, Naomi Ken Korem, Gal Zeevi, Tavi Halperin,
+                <strong>Matan Ben Yosef</strong>, Urska Jelercic, Ofir Bibi, Or
+                Patashnik, Daniel Cohen-Or</span
               >
-            </span>
+              <span class="pub-meta"
+                ><span class="pub-venue">SIGGRAPH 2026</span></span
+              >
+              <span class="pub-links">
+                <a
+                  href="https://arxiv.org/abs/2601.22143"
+                  rel="noopener noreferrer"
+                  >arXiv</a
+                >
+                <a href="https://justdubit.github.io/" rel="noopener noreferrer"
+                  >project</a
+                >
+              </span>
+            </div>
           </li>
           <li>
-            <span class="pub-title"
-              >HDR Video Generation via Latent Alignment with Logarithmic
-              Encoding</span
+            <a
+              class="pub-thumb"
+              href="https://hdr-lumivid.github.io/"
+              rel="noopener noreferrer"
+              tabindex="-1"
+              aria-hidden="true"
             >
-            <span class="pub-authors"
-              >Naomi Ken Korem, Mohamed Oumoumad, Harel Cain,
-              <strong>Matan Ben Yosef</strong>, Urska Jelercic, Ofir Bibi, Yaron
-              Inger, Or Patashnik, Daniel Cohen-Or</span
-            >
-            <span class="pub-meta">arXiv preprint, 2026</span>
-            <span class="pub-links">
-              <a href="https://arxiv.org/abs/2604.11788" rel="noopener noreferrer"
-                >arXiv</a
+              <video
+                src="assets/pubs/lumivid.mp4"
+                width="1920"
+                height="1024"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+            </a>
+            <div class="pub-body">
+              <span class="pub-title"
+                >LumiVid: HDR Video Generation via Latent Alignment with
+                Logarithmic Encoding</span
               >
-            </span>
-          </li>
-          <li>
-            <span class="pub-title"
-              >LoRA Training for Text-to-Video Models: A Practical Guide to
-              Fine-Tuning SOTA Video Generation</span
-            >
-            <span class="pub-authors"
-              >Naomi Ken Korem, <strong>Matan Ben Yosef</strong>, Tavi Halperin,
-              Ofir Bibi</span
-            >
-            <span class="pub-meta">SIGGRAPH Asia 2025 Courses</span>
-            <span class="pub-links pub-links-pending">
-              <span class="pending">materials forthcoming</span>
-            </span>
-          </li>
-          <li>
-            <span class="pub-title"
-              >Gaussian Mixture Generative Adversarial Networks for Diverse
-              Datasets, and the Unsupervised Clustering of Images</span
-            >
-            <span class="pub-authors"
-              ><strong>Matan Ben-Yosef</strong>, Daphna Weinshall</span
-            >
-            <span class="pub-meta">arXiv preprint, 2018</span>
-            <span class="pub-links">
-              <a href="https://arxiv.org/abs/1808.10356" rel="noopener noreferrer"
-                >arXiv</a
+              <span class="pub-authors"
+                >Naomi Ken Korem, Mohamed Oumoumad, Harel Cain,
+                <strong>Matan Ben Yosef</strong>, Urska Jelercic, Ofir Bibi,
+                Yaron Inger, Or Patashnik, Daniel Cohen-Or</span
               >
-            </span>
+              <span class="pub-meta">arXiv preprint, 2026</span>
+              <span class="pub-links">
+                <a
+                  href="https://arxiv.org/abs/2604.11788"
+                  rel="noopener noreferrer"
+                  >arXiv</a
+                >
+                <a
+                  href="https://hdr-lumivid.github.io/"
+                  rel="noopener noreferrer"
+                  >project</a
+                >
+              </span>
+            </div>
           </li>
           <li>
-            <span class="pub-title">Multi-Modal Generative Adversarial Networks</span>
-            <span class="pub-authors"><strong>Matan Ben-Yosef</strong></span>
-            <span class="pub-meta"
-              >MSc thesis, The Hebrew University of Jerusalem, 2018</span
+            <div
+              class="pub-thumb pub-thumb-pending"
+              role="img"
+              aria-label="Course materials thumbnail forthcoming"
             >
-            <span class="pub-links pub-links-pending">
-              <span class="pending">PDF forthcoming</span>
-            </span>
+              <span>Materials forthcoming</span>
+            </div>
+            <div class="pub-body">
+              <span class="pub-title"
+                >LoRA Training for Text-to-Video Models: A Practical Guide to
+                Fine-Tuning SOTA Video Generation</span
+              >
+              <span class="pub-authors"
+                >Naomi Ken Korem, <strong>Matan Ben Yosef</strong>, Tavi
+                Halperin, Ofir Bibi</span
+              >
+              <span class="pub-meta">SIGGRAPH Asia 2025 Courses</span>
+              <span class="pub-links pub-links-pending">
+                <span class="pending">materials forthcoming</span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <a
+              class="pub-thumb"
+              href="https://arxiv.org/abs/1808.10356"
+              rel="noopener noreferrer"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <img
+                src="assets/pubs/gmgan.jpg"
+                alt=""
+                width="570"
+                height="418"
+                loading="lazy"
+              />
+            </a>
+            <div class="pub-body">
+              <span class="pub-title"
+                >Gaussian Mixture Generative Adversarial Networks for Diverse
+                Datasets, and the Unsupervised Clustering of Images</span
+              >
+              <span class="pub-authors"
+                ><strong>Matan Ben-Yosef</strong>, Daphna Weinshall</span
+              >
+              <span class="pub-meta">arXiv preprint, 2018</span>
+              <span class="pub-links">
+                <a
+                  href="https://arxiv.org/abs/1808.10356"
+                  rel="noopener noreferrer"
+                  >arXiv</a
+                >
+              </span>
+            </div>
+          </li>
+          <li>
+            <a
+              class="pub-thumb"
+              href="https://www.cs.huji.ac.il/w~daphna/theses/Matan_BenYosef_2018.pdf"
+              rel="noopener noreferrer"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <img
+                src="assets/pubs/mmgan-thesis.jpg"
+                alt=""
+                width="295"
+                height="297"
+                loading="lazy"
+              />
+            </a>
+            <div class="pub-body">
+              <span class="pub-title"
+                >Multi-Modal Generative Adversarial Networks</span
+              >
+              <span class="pub-authors"><strong>Matan Ben-Yosef</strong></span>
+              <span class="pub-meta"
+                >MSc thesis, The Hebrew University of Jerusalem, 2018</span
+              >
+              <span class="pub-links">
+                <a
+                  href="https://www.cs.huji.ac.il/w~daphna/theses/Matan_BenYosef_2018.pdf"
+                  rel="noopener noreferrer"
+                  >PDF</a
+                >
+              </span>
+            </div>
           </li>
         </ol>
       </section>
