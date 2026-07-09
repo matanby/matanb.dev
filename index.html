@@ -6,7 +6,7 @@
     <title>Matan Ben Yosef</title>
     <meta
       name="description"
-      content="Generative-AI researcher and engineer working on video generation at LTX (Lightricks)."
+      content="Generative-AI researcher and engineer at LTX (Lightricks). I build the training systems behind their video models."
     />
     <meta name="author" content="Matan Ben Yosef" />
     <link rel="canonical" href="https://matanb.me/" />
@@ -14,7 +14,7 @@
     <meta property="og:title" content="Matan Ben Yosef" />
     <meta
       property="og:description"
-      content="Generative-AI researcher and engineer working on video generation at LTX (Lightricks)."
+      content="Generative-AI researcher and engineer at LTX (Lightricks). I build the training systems behind their video models."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://matanb.me/" />
@@ -35,8 +35,8 @@
         <p class="eyebrow">London, UK</p>
         <h1 class="name">Matan Ben Yosef</h1>
         <p class="tagline">
-          Generative-AI researcher and engineer working on video generation at
-          LTX (Lightricks).
+          Generative-AI researcher and engineer at LTX (Lightricks). I build the
+          training systems behind their video models.
         </p>
         <nav class="links" aria-label="Primary links">
           <a href="https://github.com/matanby" rel="noopener noreferrer"
@@ -65,11 +65,16 @@
             controllability: IC-LoRAs, ControlNet-style adapters, LoRA training
             for things like video detailing and spatiotemporal super-resolution,
             and performance optimization of the training stack. I designed and
-            built the LTX Trainer from scratch — the training system we and the
-            community use to fine-tune LTX models. Earlier at Lightricks I
-            worked across the stack — LoRA training infrastructure for SD and
-            Flux at large scale, and the backend of a text-to-image system
-            serving millions of users.
+            built the
+            <a
+              href="https://github.com/Lightricks/LTX-2/tree/main/packages/ltx-trainer"
+              rel="noopener noreferrer"
+              >LTX Trainer</a
+            >
+            from scratch — the training system we and the community use to
+            fine-tune LTX models. Earlier at Lightricks I worked across the
+            stack — LoRA training infrastructure for SD and Flux at large scale,
+            and the backend of a text-to-image system serving millions of users.
           </p>
           <p>
             I've been building software for a long time, across quite a few
@@ -91,140 +96,12 @@
 
       <section
         class="section reveal"
-        id="work"
-        aria-labelledby="work-heading"
-      >
-        <h2 id="work-heading">Selected work</h2>
-
-        <article class="selected">
-          <div class="selected-copy">
-            <h3>FaceFX</h3>
-            <p>
-              A GAN-based face-effects app I built and shipped. Acquired by
-              Lightricks at the end of 2022.
-            </p>
-          </div>
-          <div
-            class="media-slot"
-            role="img"
-            aria-label="FaceFX screenshots coming soon"
-          >
-            <span class="media-slot-label">Screenshots forthcoming</span>
-          </div>
-        </article>
-
-        <article class="selected selected-plain">
-          <h3>
-            <a
-              href="https://github.com/Lightricks/LTX-2/tree/main/packages/ltx-trainer"
-              rel="noopener noreferrer"
-              >LTX Trainer</a
-            >
-          </h3>
-          <p>
-            The training system for Lightricks' LTX-2 video models: LoRA
-            fine-tuning and multi-modal conditioning, used internally and by the
-            community. I designed and built it from scratch.
-          </p>
-        </article>
-      </section>
-
-      <section class="section reveal" id="also" aria-labelledby="also-heading">
-        <h2 id="also-heading">Also</h2>
-        <ul class="also-list">
-          <li>
-            <a href="https://github.com/matanby/sft-cli" rel="noopener noreferrer"
-              >sft-cli</a
-            >
-            <span>Interactive terminal browser for <code>.safetensors</code> files</span>
-          </li>
-          <li>
-            <a href="https://github.com/matanby/vidio" rel="noopener noreferrer"
-              >vidio</a
-            >
-            <span>Simple CLI for trimming, resizing, cropping, and converting video</span>
-          </li>
-          <li>
-            <a
-              href="https://github.com/matanby/python-monorepo-template"
-              rel="noopener noreferrer"
-              >python-monorepo-template</a
-            >
-            <span>Template for multiple Python packages in one repo</span>
-          </li>
-          <li>
-            <a
-              href="https://github.com/matanby/CloudFirewall"
-              rel="noopener noreferrer"
-              >CloudFirewall</a
-            >
-            <span>A simple SDN-based firewall</span>
-          </li>
-          <li>
-            <a
-              href="https://github.com/matanby/fast-style-transfer-pytorch"
-              rel="noopener noreferrer"
-              >fast-style-transfer-pytorch</a
-            >
-            <span>Minimal PyTorch implementation of Johnson et&nbsp;al., 2016</span>
-          </li>
-        </ul>
-      </section>
-
-      <section
-        class="section reveal"
         id="publications"
         aria-labelledby="pubs-heading"
       >
         <h2 id="pubs-heading">Publications</h2>
         <ol class="biblio">
-          <li>
-            <a
-              class="pub-thumb"
-              href="https://matanby.github.io/AVControl/"
-              rel="noopener noreferrer"
-              tabindex="-1"
-              aria-hidden="true"
-            >
-              <video
-                src="assets/pubs/avcontrol.mp4"
-                width="190"
-                height="190"
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="metadata"
-              ></video>
-            </a>
-            <div class="pub-body">
-              <span class="pub-title"
-                >AVControl: Efficient Framework for Training Audio-Visual
-                Controls</span
-              >
-              <span class="pub-authors"
-                ><strong>Matan Ben-Yosef</strong>*, Tavi Halperin*, Naomi Ken
-                Korem, Mohammad Salama, Harel Cain, Asaf Joseph, Anthony Chen,
-                Urska Jelercic, Ofir Bibi</span
-              >
-              <span class="pub-meta"
-                >arXiv preprint, 2026 · *equal contribution</span
-              >
-              <span class="pub-links">
-                <a
-                  href="https://arxiv.org/abs/2603.24793"
-                  rel="noopener noreferrer"
-                  >arXiv</a
-                >
-                <a
-                  href="https://matanby.github.io/AVControl/"
-                  rel="noopener noreferrer"
-                  >project</a
-                >
-              </span>
-            </div>
-          </li>
-          <li>
+          <li class="pub-featured">
             <a
               class="pub-thumb"
               href="https://justdubit.github.io/"
@@ -267,7 +144,54 @@
               </span>
             </div>
           </li>
-          <li>
+          <li class="pub-featured">
+            <a
+              class="pub-thumb"
+              href="https://matanby.github.io/AVControl/"
+              rel="noopener noreferrer"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <video
+                src="assets/pubs/avcontrol.mp4"
+                width="190"
+                height="190"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+            </a>
+            <div class="pub-body">
+              <span class="pub-title"
+                >AVControl: Efficient Framework for Training Audio-Visual
+                Controls</span
+              >
+              <span class="pub-authors"
+                ><strong>Matan Ben-Yosef</strong>*, Tavi Halperin*, Naomi Ken
+                Korem, Mohammad Salama, Harel Cain, Asaf Joseph, Anthony Chen,
+                Urska Jelercic, Ofir Bibi</span
+              >
+              <span class="pub-meta"
+                >arXiv preprint, 2026 ·
+                <span class="pub-role">Equal contribution</span></span
+              >
+              <span class="pub-links">
+                <a
+                  href="https://arxiv.org/abs/2603.24793"
+                  rel="noopener noreferrer"
+                  >arXiv</a
+                >
+                <a
+                  href="https://matanby.github.io/AVControl/"
+                  rel="noopener noreferrer"
+                  >project</a
+                >
+              </span>
+            </div>
+          </li>
+          <li class="pub-featured">
             <a
               class="pub-thumb"
               href="https://hdr-lumivid.github.io/"
@@ -308,29 +232,6 @@
                   rel="noopener noreferrer"
                   >project</a
                 >
-              </span>
-            </div>
-          </li>
-          <li>
-            <div
-              class="pub-thumb pub-thumb-pending"
-              role="img"
-              aria-label="Course materials thumbnail forthcoming"
-            >
-              <span>Materials forthcoming</span>
-            </div>
-            <div class="pub-body">
-              <span class="pub-title"
-                >LoRA Training for Text-to-Video Models: A Practical Guide to
-                Fine-Tuning SOTA Video Generation</span
-              >
-              <span class="pub-authors"
-                >Naomi Ken Korem, <strong>Matan Ben Yosef</strong>, Tavi
-                Halperin, Ofir Bibi</span
-              >
-              <span class="pub-meta">SIGGRAPH Asia 2025 Courses</span>
-              <span class="pub-links pub-links-pending">
-                <span class="pending">materials forthcoming</span>
               </span>
             </div>
           </li>
@@ -402,6 +303,71 @@
             </div>
           </li>
         </ol>
+      </section>
+
+      <section
+        class="section reveal"
+        id="open-source"
+        aria-labelledby="oss-heading"
+      >
+        <h2 id="oss-heading">Open source</h2>
+        <ul class="also-list">
+          <li>
+            <a
+              href="https://github.com/Lightricks/LTX-2/tree/main/packages/ltx-trainer"
+              rel="noopener noreferrer"
+              >LTX Trainer</a
+            >
+            <span
+              >Training system for Lightricks' LTX-2 — designed and built from
+              scratch</span
+            >
+          </li>
+          <li>
+            <a href="https://github.com/matanby/sft-cli" rel="noopener noreferrer"
+              >sft-cli</a
+            >
+            <span
+              >Interactive terminal browser for
+              <code>.safetensors</code> files</span
+            >
+          </li>
+          <li>
+            <a href="https://github.com/matanby/vidio" rel="noopener noreferrer"
+              >vidio</a
+            >
+            <span
+              >Simple CLI for trimming, resizing, cropping, and converting
+              video</span
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/matanby/python-monorepo-template"
+              rel="noopener noreferrer"
+              >python-monorepo-template</a
+            >
+            <span>Template for multiple Python packages in one repo</span>
+          </li>
+          <li>
+            <a
+              href="https://github.com/matanby/CloudFirewall"
+              rel="noopener noreferrer"
+              >CloudFirewall</a
+            >
+            <span>A simple SDN-based firewall</span>
+          </li>
+          <li>
+            <a
+              href="https://github.com/matanby/fast-style-transfer-pytorch"
+              rel="noopener noreferrer"
+              >fast-style-transfer-pytorch</a
+            >
+            <span
+              >Minimal PyTorch implementation of Johnson et&nbsp;al., 2016</span
+            >
+          </li>
+        </ul>
       </section>
 
       <section

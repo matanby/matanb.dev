@@ -119,7 +119,7 @@ a:focus-visible {
 
 .tagline {
   margin: 1.15rem 0 0;
-  max-width: 28rem;
+  max-width: 32rem;
   color: var(--ink-soft);
   font-size: 1.125rem;
   line-height: 1.45;
@@ -174,65 +174,6 @@ a:focus-visible {
 
 .prose p:last-child {
   margin-bottom: 0;
-}
-
-.selected {
-  display: grid;
-  gap: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.selected:last-child {
-  margin-bottom: 0;
-}
-
-.selected h3 {
-  margin: 0 0 0.45rem;
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 550;
-}
-
-.selected h3 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.selected h3 a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-}
-
-.selected p {
-  margin: 0;
-  max-width: var(--measure);
-  color: var(--ink-soft);
-}
-
-.selected-plain {
-  padding-top: 0.25rem;
-}
-
-.media-slot {
-  display: grid;
-  place-items: center;
-  min-height: 11rem;
-  border: 1px dashed color-mix(in srgb, var(--ink) 22%, transparent);
-  border-radius: 2px;
-  background:
-    linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--paper) 80%, transparent),
-      color-mix(in srgb, var(--bg-deep) 70%, transparent)
-    );
-  color: var(--muted);
-}
-
-.media-slot-label {
-  font-size: 0.875rem;
-  letter-spacing: 0.02em;
 }
 
 .also-list,
@@ -341,7 +282,8 @@ a:focus-visible {
   font-size: 0.95rem;
 }
 
-.pub-venue {
+.pub-venue,
+.pub-role {
   color: var(--ink);
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -421,25 +363,33 @@ a:focus-visible {
 }
 
 @media (min-width: 720px) {
-  .selected:not(.selected-plain) {
-    grid-template-columns: 1.15fr 0.85fr;
-    align-items: stretch;
-    gap: 1.75rem;
-  }
-
   .also-list li {
     grid-template-columns: minmax(10rem, 14rem) 1fr;
     align-items: baseline;
   }
 
   .biblio li {
-    grid-template-columns: 9.5rem minmax(0, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: 1.15rem;
     align-items: start;
+  }
+
+  .biblio li.pub-featured {
+    grid-template-columns: 13.5rem minmax(0, 1fr);
+    gap: 1.4rem;
+    padding: 1.55rem 0;
   }
 
   .pub-thumb {
     aspect-ratio: 4 / 3;
+  }
+
+  .pub-featured .pub-thumb {
+    aspect-ratio: 16 / 10;
+  }
+
+  .pub-featured .pub-title {
+    font-size: 1.08rem;
   }
 
   .patent-list li {

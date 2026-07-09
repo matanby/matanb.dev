@@ -1,7 +1,9 @@
 (() => {
   const nodes = Array.from(document.querySelectorAll(".reveal"));
   const videos = Array.from(document.querySelectorAll(".pub-thumb video"));
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
   if (reduceMotion) {
     nodes.forEach((node) => node.classList.add("is-visible"));
