@@ -5,30 +5,45 @@
     "(prefers-reduced-motion: reduce)"
   ).matches;
 
+  const show = (node) => node.classList.add("is-visible");
+
+  // Any pixel intersecting the viewport (with a small buffer) counts as shown.
+  const isInView = (node) => {
+    const rect = node.getBoundingClientRect();
+    const buffer = 48;
+    return (
+      rect.bottom > -buffer &&
+      rect.top < window.innerHeight + buffer
+    );
+  };
+
   if (reduceMotion) {
-    nodes.forEach((node) => node.classList.add("is-visible"));
+    nodes.forEach(show);
     videos.forEach((video) => {
       video.removeAttribute("autoplay");
       video.pause();
     });
-  } else if (nodes.length) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (!entry.isIntersecting) continue;
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
-    );
-
-    nodes.forEach((node, index) => {
-      if (index === 0) {
-        requestAnimationFrame(() => node.classList.add("is-visible"));
-        return;
-      }
-      observer.observe(node);
-    });
+    return;
   }
+
+  if (!nodes.length) return;
+
+  nodes.forEach((node) => {
+    if (isInView(node)) show(node);
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        show(entry.target);
+        observer.unobserve(entry.target);
+      }
+    },
+    { rootMargin: "48px 0px 48px 0px", threshold: 0 }
+  );
+
+  nodes.forEach((node) => {
+    if (!node.classList.contains("is-visible")) observer.observe(node);
+  });
 })();
