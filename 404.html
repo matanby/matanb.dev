@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found — Matan Ben Yosef</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0b0c'/%3E%3Ctext x='16' y='22.5' font-family='Helvetica,Arial,sans-serif' font-size='17' font-weight='600' fill='%23f2f1ef' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <script>
+      // Resolve the theme before first paint so there is no flash.
+      (() => {
+        let stored = null;
+        try {
+          stored = localStorage.getItem("theme");
+        } catch (error) {
+          /* storage unavailable; fall back to the OS preference */
+        }
+        const choice = stored === "light" || stored === "dark" ? stored : null;
+        const prefersLight = window.matchMedia(
+          "(prefers-color-scheme: light)"
+        ).matches;
+        const theme = choice || (prefersLight ? "light" : "dark");
+        document.documentElement.dataset.theme = theme;
+        const themeColor = document.querySelector('meta[name="theme-color"]');
+        if (themeColor) {
+          themeColor.content = theme === "light" ? "#fbfbfa" : "#0b0b0c";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <main class="page" id="main">
+      <section class="intro">
+        <p class="eyebrow">404</p>
+        <h1 class="name">Page not found</h1>
+        <p class="tagline">
+          Nothing lives at this address. Everything on this site is on one page.
+        </p>
+        <nav class="links" aria-label="Recovery links">
+          <a href="/">Home</a>
+          <a href="/#publications">Publications</a>
+          <a href="/#open-source">Open source</a>
+          <a href="mailto:hi@matanb.dev">Email</a>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>

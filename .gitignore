@@ -2,6 +2,11 @@
 .idea/
 .vscode/
 *.log
+# Private working notes and source material. GitHub Pages serves every file in
+# the repo, so anything committed here becomes publicly fetchable and indexable.
+PROFILE.md
 OPEN-ITEMS.md
+GITHUB-PROFILE.md
+LinkedIn-Profile.pdf
 assets/pubs/candidates/
-assets/pubs/lora-course-src.png
+tools/

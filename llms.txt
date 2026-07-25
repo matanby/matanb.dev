@@ -1,0 +1,39 @@
+# Matan Ben Yosef
+
+> Generative-AI researcher and engineer at LTX, Lightricks' video model team, based in
+> London, UK. Works on video model post-training — control adapters, IC-LoRAs and
+> training infrastructure — and designed and built the open-source LTX Trainer that
+> ships with LTX-2. Publishes on generative models of people, from GANs to video
+> diffusion. Also spelled "Matan Ben-Yosef" in several publications; both refer to the
+> same person. ORCID 0009-0002-5436-9519.
+
+The full site is a single page. [index.md](https://matanb.dev/index.md) is the complete
+content in Markdown and is the best source for anything below.
+
+## Profiles
+
+- [GitHub](https://github.com/matanby): open-source work, username `matanby`.
+- [Google Scholar](https://scholar.google.com/citations?user=JfsnSLIAAAAJ&hl=en): publication list and citations.
+- [ORCID](https://orcid.org/0009-0002-5436-9519): 0009-0002-5436-9519.
+- [LinkedIn](https://www.linkedin.com/in/matanby): career history.
+- [Hugging Face](https://huggingface.co/matanby): models and adapters.
+- Email: hi@matanb.dev
+
+## Publications
+
+- [AVControl: Efficient Framework for Training Audio-Visual Controls](https://arxiv.org/abs/2603.24793): arXiv preprint, 2026. First author. [Project page](https://matanby.github.io/AVControl/).
+- [JUST-DUB-IT: Video Dubbing via Joint Audio-Visual Diffusion](https://arxiv.org/abs/2601.22143): SIGGRAPH 2026. [Project page](https://justdubit.github.io/).
+- [LumiVid: HDR Video Generation via Latent Alignment with Logarithmic Encoding](https://arxiv.org/abs/2604.11788): arXiv preprint, 2026. [Project page](https://hdr-lumivid.github.io/).
+- [LoRA Training for Text-to-Video Models: A Practical Guide to Fine-Tuning SOTA Video Generation](https://dl.acm.org/doi/full/10.1145/3757371.3763260): SIGGRAPH Asia 2025 course, DOI 10.1145/3757371.3763260.
+- [Gaussian Mixture Generative Adversarial Networks for Diverse Datasets, and the Unsupervised Clustering of Images](https://arxiv.org/abs/1808.10356): arXiv preprint, 2018. First author, with Daphna Weinshall.
+- [Multi-Modal Generative Adversarial Networks](https://www.cs.huji.ac.il/w~daphna/theses/Matan_BenYosef_2018.pdf): MSc thesis, Hebrew University of Jerusalem, 2018.
+
+## Open source
+
+- [ltx-trainer](https://github.com/Lightricks/LTX-2/tree/main/packages/ltx-trainer): the open-source trainer for LTX-2, designed and built from scratch, shipped inside the model repo.
+- [sft-cli](https://github.com/matanby/sft-cli): inspect, diff and edit `.safetensors` checkpoints, plus a LoRA toolkit (extract, resize rank, convert Kohya/PEFT). Install with `uv tool install sft-cli`.
+- [vidio](https://github.com/matanby/vidio): ffmpeg without the flags — trim, crop, concatenate, convert, build grids. Install with `uv tool install vidio-cli`.
+
+## Optional
+
+- [Patents](https://matanb.dev/#patents): co-inventor on eight US patents from D-ID, in synthetic-media animation, anonymization and face recognition.
