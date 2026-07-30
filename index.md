@@ -2,8 +2,9 @@
 
 London, UK · [matanb.dev](https://matanb.dev/) · <hi@matanb.dev>
 
-Generative-AI researcher and engineer at LTX (Lightricks). I enjoy training models and
-building cool stuff with them.
+Generative-AI researcher and engineer at LTX (Lightricks). I enjoy working the
+entire stack, from early research and model training to inference optimization and
+the integration in products people actually use.
 
 Also published as **Matan Ben-Yosef**. ORCID [0009-0002-5436-9519](https://orcid.org/0009-0002-5436-9519).
 
